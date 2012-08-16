@@ -4,8 +4,11 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 development:
-  adapter: sqlite3
-  database: db/development.sqlite3
+  adapter: mysql2
+  server : localhost
+  database: Users_MicroPost
+  username: root
+  password: 
   pool: 5
   timeout: 5000
 
@@ -15,7 +18,8 @@ development:
 test:
   adapter: sqlite3
   database: db/test.sqlite3
-  pool: 5
+  pool: 5email:string, we have arranged for the User model
+
   timeout: 5000
 
 production:
